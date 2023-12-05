@@ -1,0 +1,51 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 90vw;
+}
+
+.img {
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    flex: 1;
+    border-radius: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    position: relative;
+    transition: ease-in-out 0.5s;
+}
+
+.img h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    opacity: 0;
+    transition: ease-in-out 0.4s;
+}
+
+.active {
+    flex: 5;
+}
+
+.active h3 {
+    opacity: 1;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
